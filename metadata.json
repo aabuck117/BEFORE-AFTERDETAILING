@@ -1,0 +1,6 @@
+{
+  "name": "Before and After Detailing",
+  "description": "Premium automotive detailing service website with high-end animations and marine blue highlights.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

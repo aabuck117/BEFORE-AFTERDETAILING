@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;900&family=Space+Grotesk:wght@400;500;600;700;800;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  
+  --color-jet-black: #050505;
+  --color-jet-gray: #0a0a0a;
+  --color-marine-blue: #00A5CF;
+  --color-marine-light: #00D4FF;
+  --color-marine-dark: #007A99;
+}
+
+@layer base {
+  body {
+    @apply bg-jet-black text-white font-sans antialiased;
+    overflow-x: hidden;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display tracking-tight;
+  }
+}
+
+.bg-carbon-fiber {
+  background-image: radial-gradient(rgba(255,255,255,0.15) 1px, transparent 1px), radial-gradient(rgba(255,255,255,0.15) 1px, transparent 1px);
+  background-size: 8px 8px;
+  background-position: 0 0, 4px 4px;
+}
+
+.text-glow {
+  text-shadow: 0 0 20px rgba(0, 165, 207, 0.5);
+}
+
+.box-glow {
+  box-shadow: 0 0 30px rgba(0, 165, 207, 0.15);
+}
+
+.glass-panel {
+  @apply bg-white/5 backdrop-blur-lg border border-white/10;
+}
+
+.glass-panel-marine {
+  @apply bg-marine-blue/10 backdrop-blur-lg border border-marine-light/20;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #050505;
+}
+::-webkit-scrollbar-thumb {
+  background: #007A99;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00D4FF;
+}
